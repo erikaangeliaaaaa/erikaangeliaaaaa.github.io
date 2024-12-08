@@ -1,0 +1,44 @@
+body {
+  background: linear-gradient(
+    to bottom,
+    rgba(38, 87, 38, 0.2),
+    rgb(28, 99, 47)
+  );
+}
+.jumbotron {
+  min-height: 50vh; /* Set tinggi minimal jumbotron */
+  margin: 0;
+  padding: 8rem 2rem 0rem;
+  position: relative;
+}
+.btn-custom {
+  background-color: #1c4828;
+  color: white;
+  text-align: center;
+}
+.location-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Memposisikan konten secara horizontal di tengah */
+  justify-content: center; /* Memposisikan konten secara vertikal di tengah */
+  text-align: center; /* Teks rata tengah */
+  margin: 30px;
+}
+.oval {
+  display: inline-block; /* Supaya ukuran oval mengikuti teks */
+  background-color: #1c4828; /* Warna hijau */
+  color: white; /* Warna teks putih */
+  padding: 15px 20px; /* Menambahkan padding agar terlihat oval */
+  border-radius: 50px; /* Membuat bentuk oval */
+}
+#menu .row.text-center {
+  padding-left: 140px;
+  padding-right: 120px;
+}
+.card-img-top:hover {
+  transform: scale(1.1); /* Zoom in */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transisi yang mulus */
+}
+.navbar-nav .nav-link:hover {
+  color: #04d055; /* Warna saat hover */
+}

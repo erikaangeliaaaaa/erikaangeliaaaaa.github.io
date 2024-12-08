@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    body {
+      background-color: rgba(0, 128, 0, 0.3);
+    }
+    .card-img-top:hover {
+      transform: scale(1.1); /* Zoom in */
+      transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transisi yang mulus */
+    }
+    #menu .row.text-center {
+      padding-left: 160px;
+      padding-right: 150px;
+    }
+    .btn-custom {
+      background-color: #1c4828;
+      color: white;
+    }
+    .oval {
+      display: inline-block; /* Supaya ukuran oval mengikuti teks */
+      background-color: #1c4828; /* Warna hijau */
+      color: white; /* Warna teks putih */
+      padding: 15px 20px; /* Menambahkan padding agar terlihat oval */
+      border-radius: 50px; /* Membuat bentuk oval */
+    }
+  </style>
+  <body>
+    <!-- Menu -->
+    <section id="menu">
+      <div class="container">
+        <div class="row mt-5">
+          <!-- Back Button -->
+          <div class="col-12 text-start">
+            <button onclick="window.history.back()" class="btn btn-custom">
+              Back
+            </button>
+          </div>
+        </div>
+        <div class="row text-center pb-2">
+          <div class="col">
+            <h2 class="oval mb-5">Our Menu</h2>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-4 mb-3 text-center">
+              <div class="card" style="width: 18rem">
+                <img src="menu1.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">Salmon Mentai Cronogiri</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3 text-center">
+              <div class="card" style="width: 18rem">
+                <img src="menu2.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">Tiramisu Cromboloni</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3 text-center">
+              <div class="card" style="width: 18rem">
+                <img src="menu3.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">Pain Au Chocolate</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3 text-center">
+              <div class="card" style="width: 18rem">
+                <img src="menu4.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">Curry Puff</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3 text-center">
+              <div class="card" style="width: 18rem">
+                <img src="menu5.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">Donut V2.0</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3 text-center">
+              <div class="card" style="width: 18rem">
+                <img src="image3.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">Dubai Chocolate</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3 text-center">
+              <div class="card" style="width: 18rem">
+                <img src="menu6.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">Strawberry Crookies</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3 text-center">
+              <div class="card" style="width: 18rem">
+                <img src="menu7.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">Belgian Lava</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3 text-center">
+              <div class="card" style="width: 18rem">
+                <img src="menu8.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">Oreo Rolls</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#1c4828"
+          fill-opacity="1"
+          d="M0,160L18.5,181.3C36.9,203,74,245,111,256C147.7,267,185,245,222,213.3C258.5,181,295,139,332,149.3C369.2,160,406,224,443,213.3C480,203,517,117,554,85.3C590.8,53,628,75,665,117.3C701.5,160,738,224,775,218.7C812.3,213,849,139,886,133.3C923.1,128,960,192,997,208C1033.8,224,1071,192,1108,154.7C1144.6,117,1182,75,1218,85.3C1255.4,96,1292,160,1329,208C1366.2,256,1403,288,1422,304L1440,320L1440,320L1421.5,320C1403.1,320,1366,320,1329,320C1292.3,320,1255,320,1218,320C1181.5,320,1145,320,1108,320C1070.8,320,1034,320,997,320C960,320,923,320,886,320C849.2,320,812,320,775,320C738.5,320,702,320,665,320C627.7,320,591,320,554,320C516.9,320,480,320,443,320C406.2,320,369,320,332,320C295.4,320,258,320,222,320C184.6,320,148,320,111,320C73.8,320,37,320,18,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
