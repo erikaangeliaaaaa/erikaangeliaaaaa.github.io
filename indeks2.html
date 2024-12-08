@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Gaya untuk fade-out */
+      .fade-out {
+        opacity: 1;
+        transition: opacity 1s ease-in-out; /* Durasi transisi */
+      }
+
+      .fade-out.hidden {
+        opacity: 0; /* Fade-out menjadi transparan */
+      }
+
+      /* Video background */
+      .videobg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        min-height: 100vh;
+        overflow: hidden;
+      }
+
+      .vidback {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        min-height: 100%;
+        min-width: 100%;
+        z-index: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Kontainer Landing Page -->
+    <div class="videobg fade-out" id="landing">
+      <video class="vidback" src="landingpage.mp4" autoplay muted loop></video>
+    </div>
+
+    <script>
+      setTimeout(function () {
+        window.location.href = "indeks2.html"; // Fungsi untuk mengganti URL ke homepage
+      }, 5000); // 5000ms = 5 detik
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
