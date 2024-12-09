@@ -54,6 +54,7 @@ body {
   #menu .row.text-center {
     padding-left: 10px;
     padding-right: 10px;
+    gap: 20px;
   }
 
   .card-img-top {
