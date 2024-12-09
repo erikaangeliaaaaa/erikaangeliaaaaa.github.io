@@ -10,44 +10,42 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="icon" type="image/x-icon" href="icon.ico" />
   </head>
   <style>
     body {
       background-color: rgba(0, 128, 0, 0.3);
     }
     .card-img-top:hover {
-      transform: scale(1.1); /* Zoom in */
+      transform: scale(1.1);
       transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transisi yang mulus */
-    }
-    #menu .row.text-center {
-      padding-left: 160px;
-      padding-right: 150px;
     }
     .btn-custom {
       background-color: #1c4828;
       color: white;
     }
     .oval {
-      display: inline-block; /* Supaya ukuran oval mengikuti teks */
-      background-color: #1c4828; /* Warna hijau */
-      color: white; /* Warna teks putih */
-      padding: 15px 20px; /* Menambahkan padding agar terlihat oval */
-      border-radius: 50px; /* Membuat bentuk oval */
+      display: inline-block;
+      background-color: #1c4828;
+      color: white;
+      padding: 15px 20px;
+      border-radius: 50px;
     }
   </style>
   <body>
-    <!-- Menu -->
     <section id="menu">
       <div class="container">
         <div class="row mt-5">
-          <!-- Back Button -->
           <div class="col-12 text-start">
             <button onclick="window.history.back()" class="btn btn-custom">
               Back
             </button>
           </div>
         </div>
-        <div class="row text-center pb-2">
+        <div
+          class="row text-center"
+          style="padding-left: 150px; padding-right: 150px"
+        >
           <div class="col">
             <h2 class="oval mb-5">Our Menu</h2>
           </div>

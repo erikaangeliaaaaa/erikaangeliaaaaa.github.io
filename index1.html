@@ -4,28 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>T1311 Café</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <!-- My CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style2.css" type="text/css" />
     <link rel="icon" type="image/x-icon" href="icon.ico">
   </head>
   <body>
-    <!-- Navbar -->
+
     <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top" style="background-color: #1c4828;">
       <div class="container">
         <a class="navbar-brand" href="#">T1311 Café</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -50,11 +38,8 @@
       </div>
     </nav>
 
-    <!-- Home Section -->
-    <div
-      class="jumbotron text-center text-white"
-      style="background-color: #1c4828"
-    >
+
+    <div class="jumbotron text-center text-white" style="background-color: #1c4828">
       <h1 class="display-4">Welcome to T1311 Café!</h1>
       <p class="lead">Enjoy our best menu with unforgettable taste.</p>
     </div>
@@ -65,9 +50,8 @@
         d="M0,32L11.4,48C22.9,64,46,96,69,112C91.4,128,114,128,137,122.7C160,117,183,107,206,122.7C228.6,139,251,181,274,192C297.1,203,320,181,343,160C365.7,139,389,117,411,133.3C434.3,149,457,203,480,202.7C502.9,203,526,149,549,154.7C571.4,160,594,224,617,245.3C640,267,663,245,686,250.7C708.6,256,731,288,754,256C777.1,224,800,128,823,85.3C845.7,43,869,53,891,64C914.3,75,937,85,960,117.3C982.9,149,1006,203,1029,224C1051.4,245,1074,235,1097,208C1120,181,1143,139,1166,117.3C1188.6,96,1211,96,1234,133.3C1257.1,171,1280,245,1303,245.3C1325.7,245,1349,171,1371,165.3C1394.3,160,1417,224,1429,256L1440,288L1440,0L1428.6,0C1417.1,0,1394,0,1371,0C1348.6,0,1326,0,1303,0C1280,0,1257,0,1234,0C1211.4,0,1189,0,1166,0C1142.9,0,1120,0,1097,0C1074.3,0,1051,0,1029,0C1005.7,0,983,0,960,0C937.1,0,914,0,891,0C868.6,0,846,0,823,0C800,0,777,0,754,0C731.4,0,709,0,686,0C662.9,0,640,0,617,0C594.3,0,571,0,549,0C525.7,0,503,0,480,0C457.1,0,434,0,411,0C388.6,0,366,0,343,0C320,0,297,0,274,0C251.4,0,229,0,206,0C182.9,0,160,0,137,0C114.3,0,91,0,69,0C45.7,0,23,0,11,0L0,0Z"
       ></path>
     </svg>
-    <!-- AKhir Jumbotron -->
 
-    <!-- About Section -->
+
     <section id ="about">
       <div class="container">
         <div class="row text-center">
@@ -91,61 +75,60 @@
           </div>
         </div>
       </div>
-      <!-- Link ke Google Maps -->
-       <div class="location-container">
+      <div class="location-container">
         <p><strong>Our Location:</strong> Jl. Gandhi No. 129F, Sei Rengas II, Medan Area, Medan</p><a href="https://maps.app.goo.gl/hi3fhb8Tr6YigV746" class="btn btn-custom mt-3 mb-8 w-auto" target="_blank">Location</a>
-    </div>
-  </div>
-</section>
-<!-- Menu Section -->
-<section id="menu" class="p-5">
-  <div class="container">
-    <div class="text-center">
-      <h2 class="oval mb-4">New Menu</h2>
-    </div>
-    <div id="carouselExampleCaptions" class="carousel slide">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="image.png" class="d-block w-100" alt="menu" style="height: 500px; object-fit: cover;">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Dubai Chocolate</h5>
-            <p>The viral dubai chocolate available here.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="image2.jpg" class="d-block w-100" alt="menu" style="height: 500px; object-fit: cover;">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Donut V2.0</h5>
-            <p>Best enjoyed with eithr a cup of coffee, tea or warm milk.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="menu4.jpg" class="d-block w-100" alt="menu" style="height: 500px; object-fit: cover;">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Curry Puff</h5>
-            <p>The crispy pastry shell is the perfect complement to the flavorful filling</p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
       </div>
     </div>
   </section>
-  <!-- AKhir New Menu -->
+
+  
+  <section id="menu" class="p-5">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="oval mb-4">New Menu</h2>
+      </div>
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="image.png" class="d-block w-100" alt="menu" style="height: 500px; object-fit: cover;">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Dubai Chocolate</h5>
+              <p>The viral dubai chocolate available here.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="image2.jpg" class="d-block w-100" alt="menu" style="height: 500px; object-fit: cover;">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Donut V2.0</h5>
+              <p>Best enjoyed with eithr a cup of coffee, tea or warm milk.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="menu4.jpg" class="d-block w-100" alt="menu" style="height: 500px; object-fit: cover;">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Curry Puff</h5>
+              <p>The crispy pastry shell is the perfect complement to the flavorful filling</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
     
-  <!-- Our Menu -->
+
   <section id ="menu">
     <div class="container">
       <div class="row text-center">
@@ -201,7 +184,7 @@
               </div>
             </div>
           </div>
-          <!-- Button Lihat Menu -->
+
           <div class="row justify-content-center mt-4">
             <div class="col text-center">
               <a href="menu-detail.html" class="btn btn-custom mb-2 w-auto">See More Menu</a>
@@ -212,7 +195,7 @@
     </div>
   </section>
 
-     <!-- Order Section -->
+
      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1c4828" fill-opacity="1" d="M0,192L20,197.3C40,203,80,213,120,229.3C160,245,200,267,240,261.3C280,256,320,224,360,208C400,192,440,192,480,170.7C520,149,560,107,600,112C640,117,680,171,720,181.3C760,192,800,160,840,154.7C880,149,920,171,960,154.7C1000,139,1040,85,1080,64C1120,43,1160,53,1200,96C1240,139,1280,213,1320,229.3C1360,245,1400,203,1420,181.3L1440,160L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z"></path></svg>
      <section id="order" class="p-5" style="background-color: #1c4828;color:white;">
       <div class="container text-center">
@@ -227,7 +210,7 @@
       </div>
     </section>
 
-    <!-- Contact -->
+
       <section id="contact">
         <div class="container">
             <div class="row text-center mb-2 mt-5">
@@ -261,7 +244,9 @@
             </div>
         </div>
         </section>
-    <!-- Footer-->
+
+        
+
     <section id="contact" class="p-3" style="background-color: #1c4828; color: white;">
       <div class="container">
         <p>Location: Jl. Gandhi No. 129F, Medan Area, Medan</p>

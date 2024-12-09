@@ -4,22 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+    <link rel="icon" type="image/x-icon" href="icon.ico" />
     <style>
-      /* Gaya untuk fade-out */
-      .fade-out {
-        opacity: 1;
-        transition: opacity 1s ease-in-out; /* Durasi transisi */
+      body {
+        animation: fadeOut 5s forwards;
+        animation-delay: 3s;
       }
 
-      .fade-out.hidden {
-        opacity: 0; /* Fade-out menjadi transparan */
+      @keyframes fadeOut {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
       }
 
-      /* Video background */
       .videobg {
         display: flex;
         justify-content: center;
@@ -31,30 +31,63 @@
 
       .vidback {
         position: absolute;
-        /* bottom: 0;
-        left: 0;
-        min-height: 100%;
-        min-width: 100%; */
         top: 0;
         left: 0;
-        width: 100%; /* Lebar penuh */
+        width: 100%;
         height: 100%;
         object-fit: cover;
         z-index: -1;
       }
+
+      .overlay-text {
+        position: absolute;
+        color: white;
+        text-align: center;
+        z-index: 1;
+        animation: fadeIn 2s ease-in-out;
+      }
+
+      .overlay-text h1 {
+        font-size: 50px;
+        margin: 0;
+      }
+
+      .overlay-text p {
+        font-size: 20px;
+        margin: 10px 0 0;
+      }
+
+      @media (max-width: 768px) {
+        .overlay-text h1 {
+          font-size: 32px;
+        }
+        .overlay-text p {
+          font-size: 16px;
+        }
+      }
     </style>
   </head>
   <body>
-    <!-- Kontainer Landing Page -->
+    <!-- Landing Page Container -->
     <div class="videobg fade-out" id="landing">
-      <video class="vidback" src="landingpage.mp4" autoplay muted loop></video>
+      <video
+        class="vidback"
+        src="landingpage.mp4"
+        autoplay
+        muted
+        loop
+        preload="auto"
+      ></video>
+      <div class="overlay-text">
+        <h1>Welcome to T1311 Cafe</h1>
+        <p>Discover your favourite here</p>
+      </div>
     </div>
 
     <script>
       setTimeout(function () {
-        window.location.href = "index1.html"; // Fungsi untuk mengganti URL ke homepage
-      }, 5000); // 5000ms = 5 detik
+        window.location.href = "index1.html";
+      }, 8000);
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
