@@ -42,10 +42,6 @@ body {
 .navbar-nav .nav-link:hover {
   color: #04d055;
 }
-#menu .row.text-center .col img {
-  margin-bottom: 15px; /* Jarak antar gambar secara vertikal */
-  margin-right: 15px; /* Jarak antar gambar secara horizontal */
-}
 
 @media (max-width: 768px) {
   .jumbotron {
