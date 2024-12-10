@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
     <link rel="icon" type="image/x-icon" href="icon.ico" />
+    <!-- fadeout itu memudar secara halus sblm masuk ke hlm berikutnya -->
+    <!-- fadein itu memunculkan perlahan tulisan welcome... -->
+    <!-- keyframe Membuat efek visual seperti memudar (fade-in/out), perubahan warna, rotasi, gerakan, dan lainnya -->
     <style>
       body {
         animation: fadeOut 5s forwards;
         animation-delay: 5s;
       }
+      /* Menambahkan animasi pada elemen <body>. Animasi fadeOut akan dimulai setelah 5 detik dan akan berlangsung selama 5 detik, membuat halaman memudar secara perlahan. */
 
       @keyframes fadeOut {
         0% {
@@ -19,6 +23,7 @@
           opacity: 0;
         }
       }
+      /* Mendefinisikan animasi fadeOut. Pada awal animasi (0%), elemen sepenuhnya terlihat (opacity: 1), dan di akhir animasi (100%), elemen menjadi transparan (opacity: 0) */
 
       .videobg {
         display: flex;
@@ -28,6 +33,7 @@
         min-height: 100vh;
         overflow: hidden;
       }
+      /* Mengatur kontainer video dengan menggunakan Flexbox agar video dan teks berada di tengah layar. min-height: 100vh memastikan kontainer memiliki tinggi setidaknya 100% dari tinggi layar. overflow: hidden memastikan elemen yang melebihi batas kontainer tidak terlihat. */
 
       .vidback {
         position: absolute;
@@ -38,6 +44,7 @@
         object-fit: cover;
         z-index: -1;
       }
+      /* Menempatkan video sebagai latar belakang yang sepenuhnya mengisi lebar dan tinggi kontainer. object-fit: cover memastikan video mencakup seluruh area tanpa merusak rasio aspek. z-index: -1 memastikan video berada di belakang elemen lainnya */
 
       .overlay-text {
         position: absolute;
@@ -46,16 +53,19 @@
         z-index: 1;
         animation: fadeIn 2s ease-in-out;
       }
+      /* Menambahkan teks overlay di atas video. position: absolute memungkinkan penempatan teks di atas video, dengan warna putih (color: white) dan teks yang terpusat (text-align: center). Animasi fadeIn menampilkan teks dengan efek transisi selama 2 detik. */
 
       .overlay-text h1 {
         font-size: 50px;
         margin: 0;
       }
+      /* Mengatur ukuran font judul (h1) menjadi 50px dan menghapus margin agar teks tidak terlalu jauh dari elemen lainnya */
 
       .overlay-text p {
         font-size: 20px;
         margin: 10px 0 0;
       }
+      /* Mengatur ukuran font untuk paragraf menjadi 20px dan memberikan margin di bagian atas agar teks tidak terlalu rapat */
 
       @media (max-width: 768px) {
         .overlay-text h1 {
@@ -65,10 +75,12 @@
           font-size: 16px;
         }
       }
+      /* Menambahkan aturan responsif untuk perangkat dengan lebar maksimum 768px (seperti ponsel). Ini mengurangi ukuran font dari h1 menjadi 32px dan p menjadi 16px agar lebih sesuai dengan layar kecil. */
     </style>
   </head>
   <body>
     <div class="videobg fade-out" id="landing">
+      <!-- Kelas fade-out diterapkan untuk memberikan efek animasi pada kontainer ini. -->
       <video
         class="vidback"
         src="landingpage.mp4"
@@ -77,6 +89,7 @@
         loop
         preload="auto"
       ></video>
+      <!-- Video akan diputar otomatis (autoplay), tanpa suara (muted), dan akan berulang tanpa henti (loop). Atribut preload="auto" memastikan video dimuat lebih awal untuk pengalaman yang lebih lancar. -->
       <div class="overlay-text">
         <h1>Welcome to T1311 Cafe</h1>
         <p>Discover your favourite here</p>
@@ -88,5 +101,6 @@
         window.location.href = "index1.html";
       }, 8000);
     </script>
+    <!-- Menunda pengalihan halaman selama 8 detik, setelah itu halaman akan dialihkan  -->
   </body>
 </html>
