@@ -169,7 +169,11 @@
           <h2 class="oval mb-4">Our Menu</h2>
         </div>
         <div class="row justify-content-center p-4">
+        <!-- Membungkus beberapa elemen kartu dalam satu baris (row).
+        justify-content-center memastikan bahwa kolom-kolom dalam baris ini berada di tengah-tengah.
+        p-4 adalah kelas dari Bootstrap yang memberikan padding 1.5rem di semua sisi dalam baris ini. -->
           <div class="col-12 col-md-4 mb-3 text-center">
+          <!-- Setiap item menu dibungkus dalam kolom yang menggunakan kelas col-12 col-md-4. Ini berarti pada layar kecil (ukuran ponsel), setiap item menu akan mengambil 12 kolom penuh (sepanjang baris), sedangkan pada layar medium ke atas (tablet atau desktop), setiap item menu akan mengambil 4 kolom (satu baris bisa berisi 3 item menu -->
             <div class="card" style="width: 18rem;">
               <img src="menu1.jpg" class="card-img-top" alt="...">
               <div class="card-body">
@@ -253,6 +257,7 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-6">
+                  <!-- Membuat kolom yang akan mengambil 6 bagian dari grid Bootstrap (artinya, setengah dari lebar kontainer) -->
                     <form>
                         <div class="mb-3">
                           <label for="nama" class="form-label">Name</label>
@@ -270,6 +275,7 @@
                             <label for="alamat" class="form-label">Message</label>
                             <textarea class="form-control" id="alamat" rows="3"></textarea>
                         </div>
+                        <!-- Sebuah textarea untuk menulis pesan. Kolom ini memiliki atribut rows="3", yang menentukan tinggi area teks (dalam hal ini 3 baris). -->
                         <button type="submit" class="btn btn-custom mt-2">Submit</button>
                     </form>
                     </div>

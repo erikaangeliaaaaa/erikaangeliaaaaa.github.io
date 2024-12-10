@@ -5,12 +5,16 @@ body {
     rgb(28, 99, 47)
   );
 }
+/* Menerapkan latar belakang dengan gradasi linear dari atas ke bawah */
 .jumbotron {
   min-height: 50vh;
   margin: 0;
   padding: 8rem 2rem 0rem;
   position: relative;
 }
+/* Mengatur tinggi minimal elemen .jumbotron menjadi 50% dari tinggi tampilan layar (min-height: 50vh).
+Memberikan padding di bagian atas (8rem) dan sisi kiri/kanan (2rem), serta menghilangkan margin dan posisi relatif. */
+/* position: relative digunakan untuk memindahkan elemen dari posisi aslinya, tanpa mengubah aliran dokumen. */
 .btn-custom {
   background-color: #1c4828;
   color: white;
@@ -24,8 +28,11 @@ body {
   text-align: center;
   margin: 30px;
 }
+/* display: flex mengaktifkan Flexbox pada kontainer .location-container.
+flex-direction: column menyusun elemen-elemen di dalamnya secara vertikal. */
 .oval {
   display: inline-block;
+  /* display: inline-block membuat elemen tetap bersebelahan seperti elemen inline, tetapi memungkinkan Anda untuk menetapkan dimensi, margin, dan padding seperti elemen block. */
   background-color: #1c4828;
   color: white;
   padding: 15px 20px;
